@@ -11,3 +11,4 @@ ShowToc: false
 Merhaba, ben **Efe Çelik**. Bu blogda öğrendiklerimi, denediğim projeleri ve notlarımı paylaşıyorum.
 
 - GitHub: [efe-clk](https://github.com/efe-clk)
+- Bu site [Hugo](https://gohugo.io/) ile üretilir ve her `git push` sonrasında otomatik yayınlanır.
