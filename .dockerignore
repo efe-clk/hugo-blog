@@ -1,0 +1,5 @@
+.git
+public
+resources/_gen
+.hugo_build.lock
+README.md

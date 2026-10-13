@@ -1,0 +1,82 @@
+baseURL = "https://blog.efecelik.net/"
+languageCode = "tr"
+defaultContentLanguage = "tr"
+title = "Efe Çelik"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[services.rss]
+  limit = 20
+
+[sitemap]
+  changeFreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  noClasses = false
+  style = "monokai"
+
+[params]
+  env = "production"
+  author = "Efe Çelik"
+  description = "Efe Çelik'in kişisel blogu"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  ShowRssButtonInSectionTermList = true
+  DateFormat = "2 January 2006"
+
+  [params.homeInfoParams]
+    Title = "Merhaba 👋"
+    Content = "Efe Çelik'in kişisel bloguna hoş geldin."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/efe-clk"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  [params.fuseOpts]
+    keys = ["title", "summary", "content"]
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Yazılar"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Etiketler"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "Ara"
+  url = "/search/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "about"
+  name = "Hakkında"
+  url = "/hakkinda/"
+  weight = 40
